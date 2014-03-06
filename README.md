@@ -1,7 +1,7 @@
 Functions
 --------------
 ### SPM-specific
-* **batch_template.m:** This script is an example of how to set up a batch script for running SPM8 routines across multiple subjects. More extensive documentation {here}(http://hippocampish.wordpress.com/2013/03/19/setting-up-a-subject-batch-script-with-spm8/).
+* **batch_template.m:** This script is an example of how to set up a batch script for running SPM8 routines across multiple subjects. More extensive documentation [here](http://hippocampish.wordpress.com/2013/03/19/setting-up-a-subject-batch-script-with-spm8/).
 * **save_spm_slices.m:** This script saves an image file depicting whole-brain slices with a thresholded overlay corresponding to the currently-loaded results contrast.
 * **save_spm_table.m:** This script saves a tab-delimited text file listing cluster and peak information for the currently-loaded results contrast.
 
