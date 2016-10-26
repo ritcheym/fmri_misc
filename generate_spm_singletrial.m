@@ -158,10 +158,6 @@ for iSub = 1:length(subjects)
             
         end
         
-        %save beta information
-        infofile = [outputdir 'beta_info.mat'];
-        save(infofile,'trialinfo');
-        
         %run matlabbatch to create new SPM.mat file using SPM batch tools
         fprintf('\nCreating SPM.mat file:\n%s\n',[outputdir 'SPM.mat']);
         spm_jobman('initcfg')
@@ -175,6 +171,11 @@ for iSub = 1:length(subjects)
             matlabbatch = estimate_spm(spmfile);
             spm_jobman('serial', matlabbatch);
         end
+        
+                
+        %save beta information
+        infofile = [outputdir 'beta_info.mat'];
+        save(infofile,'trialinfo');
         
         clear SPM matlabbatch
         
